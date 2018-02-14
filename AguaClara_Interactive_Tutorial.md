@@ -19,7 +19,7 @@ You can find a GitHub tutorial [here](https://github.com/AguaClara/aguaclara_tut
 1. Below this, write a sentence or two about yourself:
 
 <!--- Fill you answer here. --->
-
+Hi, my name is Barbara. I am Nigerian.
 
 
 
@@ -45,6 +45,7 @@ To signify a header, use `#`. The more `#` you use, the smaller the header gets.
 1. Make a header of similar size as Header 3 with whatever text you want:
 
 <!--- Fill you answer here. --->
+### My personal header
 
 ## Emphasis
 There are several different ways to emphasize text: *italics*, **bold**, ***combined***, and ~~strikethrough~~.
@@ -57,7 +58,7 @@ There are several different ways to emphasize text: *italics*, **bold**, ***comb
 1. Write 4 of your favorite words using each type of emphasis:
 
 <!--- Fill you answer here. --->
-
+*meow* **chickatita** ***lemons*** ~~benzene~~
 
 ## Lists
 Lists are very easy to do. For a bulleted list, use the asterisk and for a numbered list, use the number followed by a period. Hitting `Enter` after a bullet or number continues the list automatically. Hitting `Enter` followed by `Tab` gets you a sub item for a bulleted list. For example:
@@ -69,6 +70,9 @@ Lists are very easy to do. For a bulleted list, use the asterisk and for a numbe
 1. Now try it out for yourself. Write down a list of things you hope to achieve this semester, and elaborate on them with sub items:
 
 <!--- Fill you answer here. --->
+1. Get an A in CHEM 1570
+* Meet more people
+  - make great friends
 
 ## Images
 To input images, you'll either need an image URL or a file path to your image. For AguaClara work, your repository should have a folder for images where you can get an image URL or file path from. In this tutorial, I've made an image folder with a picture in the `aguaclara_tutorial` repository.
@@ -100,9 +104,10 @@ Image with Height and Width Adjusted:
 
 1. Make an images folder in your personal repository, and import an image of your hometown or pet from that folder. Do it unformatted using the image URL and the relative file path method, then do it again but instead change the height and width of your image:
 
-<!--- Fill you answer here. --->
 
+![MyPenguin](https://github.com/babsorams/personal/blob/master/images/download.jpg)
 
+![Penguin](/images/download.png)
 
 
 
@@ -114,6 +119,7 @@ To insert a link, all you have to do is enclose your linked text in `[]` followe
 1. Below, write a sentence describing your major, and insert a link to your major's department website.
 
 <!--- Fill you answer here. --->
+[I am an Environmental Engineer, to learn more click this.](http://www.cee.cornell.edu/)
 
 ## Tables
 Tables in Markdown are slightly harder, but there's an automatic function that allows to you make one easily. When working in a `.md` file, all you have to do is type `table` and hit enter. It will initialize a 2 by 2 table, but you can easily increase the width by going to the last column and hitting `Tab` or it's height by clicking in any cell and hitting `Enter`. Notice in the example how the text below the header is justified left, center, and right. This is due to the line below the header. A line with a colon on the far left of the dashes only indicates left justified, colons on both sides of the dashes indicates centered, and a colon on the far right of the dashes indicates right justified.
@@ -124,9 +130,9 @@ Tables in Markdown are slightly harder, but there's an automatic function that a
 | 1        |    2     |        3 |
 ```
 
-| Column 1 | Column 2 | Column 3 |
+|Column 1 | Column 2 | Column 3 |
 |:-------- |:--------:| --------:|
-| 1        |    2     |        3 |
+|1        |    2     |        3 |
 
 When making tables, it's not important that the lines match up. For example, the following table code will still give you a nice table:
 
@@ -144,8 +150,12 @@ When making tables, it's not important that the lines match up. For example, the
 1. Create a table listing your 3 favorite animals, foods, books, and places on campus. Try out the different cell justifications:
 
 <!--- Fill you answer here. --->
+#### Favourite Things
 
-
+| Animals  | Foods |         Books         | Places |
+|:--------:|:-----:|:---------------------:|:------:|
+| Anaconda | Pizza | To Kill a Mockingbird | London |
+| Panther         |   Burrito    |            Half of Yellow Sun           |  Cairo      |
 
 ## Code and Syntax Highlighting
 Notice how throughout this document there have been computer and programming related words formatted to look more "computery". That's because I've used syntax highlighting.
@@ -163,6 +173,7 @@ For larger code blocks where you report multiple lines of code, you always start
 1. Below, write a Python print function with a different string using syntax highlighting:
 
 <!--- Fill you answer here. --->
+`print ('Cornell Engineering')`
 
 2. Now write a block of Python code for that same print statement:
 
