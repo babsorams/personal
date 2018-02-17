@@ -18,7 +18,7 @@ You can find a GitHub tutorial [here](https://github.com/AguaClara/aguaclara_tut
 
 1. Below this, write a sentence or two about yourself:
 
-<!--- Fill you answer here. --->
+
 Hi, my name is Barbara. I am Nigerian.
 
 
@@ -44,7 +44,6 @@ To signify a header, use `#`. The more `#` you use, the smaller the header gets.
 
 1. Make a header of similar size as Header 3 with whatever text you want:
 
-<!--- Fill you answer here. --->
 ### My personal header
 
 ## Emphasis
@@ -57,7 +56,7 @@ There are several different ways to emphasize text: *italics*, **bold**, ***comb
 
 1. Write 4 of your favorite words using each type of emphasis:
 
-<!--- Fill you answer here. --->
+
 *meow* **chickatita** ***lemons*** ~~benzene~~
 
 ## Lists
@@ -69,7 +68,7 @@ Lists are very easy to do. For a bulleted list, use the asterisk and for a numbe
 
 1. Now try it out for yourself. Write down a list of things you hope to achieve this semester, and elaborate on them with sub items:
 
-<!--- Fill you answer here. --->
+
 1. Get an A in CHEM 1570
 * Meet more people
   - make great friends
@@ -105,10 +104,9 @@ Image with Height and Width Adjusted:
 1. Make an images folder in your personal repository, and import an image of your hometown or pet from that folder. Do it unformatted using the image URL and the relative file path method, then do it again but instead change the height and width of your image:
 
 
-![MyPenguin](https://github.com/babsorams/personal/blob/master/images/download.jpg)
+![MyPenguin](https://github.com/babsorams/personal/blob/master/images/download.jpg?raw=true)
 
-![Penguin](/images/download.png)
-
+![Penguin](images/download.jpg)
 
 
 ## Links
@@ -118,7 +116,6 @@ To insert a link, all you have to do is enclose your linked text in `[]` followe
 
 1. Below, write a sentence describing your major, and insert a link to your major's department website.
 
-<!--- Fill you answer here. --->
 [I am an Environmental Engineer, to learn more click this.](http://www.cee.cornell.edu/)
 
 ## Tables
@@ -149,7 +146,7 @@ When making tables, it's not important that the lines match up. For example, the
 
 1. Create a table listing your 3 favorite animals, foods, books, and places on campus. Try out the different cell justifications:
 
-<!--- Fill you answer here. --->
+
 #### Favourite Things
 
 | Animals  | Foods |         Books         | Places |
@@ -172,24 +169,26 @@ For larger code blocks where you report multiple lines of code, you always start
 
 1. Below, write a Python print function with a different string using syntax highlighting:
 
-<!--- Fill you answer here. --->
+
 `print ('Cornell Engineering')`
 
 2. Now write a block of Python code for that same print statement:
 
-<!--- Fill you answer here. --->
 
-
+``` python
+x = 10
+print x
+```
 
 ## LaTeX Equations
-You can also input LaTeX formatted equations in your Markdown file. To indicate where your equation is, you need to start and end your LaTeX equation with `$$`. To get the LaTeX preview to show it formatted, press `Cntrl + Shift + X`. For example, toggle the LaTeX preview for the line below:
+You can also input LaTeX formatted equations in your Markdown file. To indicate where your equation is, you need to start and end your LaTeX equation with `$$`. To get the LaTeX preview to show it formatted, press `Ctrl + Shift + X`. For example, toggle the LaTeX preview for the line below:
 
 $$ Re_D = \frac{uD}{\nu} $$
 
 1. Try it on your own! Write your favorite equation using LaTeX source code and toggle the LaTeX preview to see it formatted:
 
 <!--- Fill you answer here. --->
-
+$$ \frac{dx}{dy}= 2x + y^2 $$
 
 # Using Python and Running it With Hydrogen in Markdown
 
@@ -197,6 +196,8 @@ $$ Re_D = \frac{uD}{\nu} $$
 1. Below this, I've copied the code I wrote for the [Python Basics Tutorial](https://github.com/AguaClara/aguaclara_tutorial/wiki/Tutorial:-Python-Basics). You should familiarize yourself with the different Hydrogen commands using this code. For the first line, use `Hydrogen: Run` (`Cmnd + Enter`).
 2. For the second line, use `Hydrogen: Run and Move Down` (`Shift + Enter`).
 3. For the remaining code, highlight it with your cursor and use `Hydrogen: Run`. What is the difference between the three?
+
+
 
 ```python
 from aide_design.play import*
@@ -218,39 +219,65 @@ plt.grid(which = 'minor')
 plt.legend(loc = 'lower right', ncol = 1)
 plt.show()
 ```
+the first command imports the whole file into Atom.
+
+second command is calling on a preinstalled function?
+
+third command is running the entire script of code
+
 
 ## Python Basics
 These questions are meant to test what you've learned from the Python Basics tutorial. If you need help answering a question, refer there first and use other online resources before seeking a Subteam Lead or RA. Be sure to run all your code with Hydrogen. When you code, make sure your using proper [variable naming](https://github.com/AguaClara/aide_design/wiki/Variable-Naming) and [coding standards](https://github.com/AguaClara/aide_design/wiki/Standards)
 
 1. Write a conditional statement with 3 conditions: when x is 10, when x is 1, and when x is anything other than 1 or 10. For each condition, have your code print what the value is or isn't.
 
-<!--- Fill you answer here. --->
 
-
-
+```python
+import random
+x = random.randint(1,10)
+if x == 10:
+  print('x is 10')
+elif x == 1:
+    print('x is 1')
+else:
+    print( 'x is not 1 or 10')
+```
 
 2. Write a `for` loop that takes a variable with an initial value of 0, and adds the current index to the previous value of that variable (i.e. you variable should grow in size every iteration). Perform the iteration 20 times, and have the final value be printed at the end.
 
-<!--- Fill you answer here. --->
+```python
+a = 0
+for i in range(20):
+  a = i + a
 
+print('a is:', a)
 
-
-
-
-
-
+```
 
 
 3. Using the NumPy package and `unit_registry`, calculate the value of sin(4) meters, and use the sigfig function from the unit unit_registry module in aide_design to get your answer to 2 sig-figs. *(Hint: You will need to import these packages. Remember how to do that?)*
 
-<!--- Fill you answer here. --->
+```Python
+from aide_design import*
+import numpy as np
+
+x = unit_registry.sin(4).sigfig
+print(x)
+```
 
 
 
 4. Create a `list` of length 5, and verify the length of your list. Once you've done that, turn your `list` into an `array` and apply units of meters to it. After that, create a 5x5 `array`, extract the middle row and middle column. Verify the size of your 2D `array` and apply units of liters to it.
 
 <!--- Fill you answer here. --->
+```Python
+x = [2, 6, 19 , 15, 33]
+print(len(x))
 
+xArray =
+
+
+```
 
 
 
@@ -285,18 +312,20 @@ In this section you and your team can practice using Teletype together.
 
 1. Create a portal for your team members to join. Have them write you words of  encouragement in the space below, and be sure they sign their name next to their encouragements.
 
-<!--- Fill you answer here. --->
+Ching: Good job!
+DU: Nice job!
 
 
 
 
 2. Have you other team members create a portal for you to join. In their Markdown file, write them something encouraging, and sign your name.
 
-<!--- Fill you answer here. --->
+Ching: great progress!
+DU: clear lines!
 
 
 # GitHub Basics
-Congratulations! You've completed this interactive tutorial. Now all you need to do is save your work and put it on your personal repository. Toggle the Git Tab using `Cntrl + Shift + 9`.
+Congratulations! You've completed this interactive tutorial. Now all you need to do is save your work and put it on your personal repository. Toggle the Git Tab using `Ctrl + Shift + 9`.
 
 1. Stage your changes.
 2. In your commit message write that you've completed the tutorial.
